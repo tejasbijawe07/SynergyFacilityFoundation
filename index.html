@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Synergy Facility Foundation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Bebas+Neue&family=Island+Moments&family=Roboto+Condensed&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/lightbox.min.css">
+<script src="js/lightbox-plus-jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="context">
+    <div class="container">
+        <div class="navbar">
+              
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </nav>
+                <img src="Images/menu.png" class="menu-icon">
+        </div>
+
+      <div class="row">
+          <div class="col">
+              <h1 class="heading">Synergy Facility Foundation</h1>
+              <p class="head">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eius impedit cumque exercitationem, iusto voluptatibus itaque suscipit. Nostrum, impedit, illum asperiores temporibus dicta atque et nisi quibusdam fugit, eos sunt.</p>
+              <button class="button">Explore</button>
+            </div>
+         <div class="col">
+            <div class="card card1">
+                <h5>Lorem Ipsum</h5>
+            </div>
+            <div class="card card2">
+                <h5>Lorem Ipsum</h5>
+            </div>
+            <div class="card card3">
+                <h5>Lorem Ipsum</h5>
+            </div>
+            <div class="card card4">
+                <h5>Lorem Ipsum</h5>
+            </div>
+         </div>
+    </div>
+
+
+    <!--About Section-->
+
+<section id="about">
+      <div class="blog-card">
+         <input type="radio" name="select" id="tap-1" checked>
+         <input type="radio" name="select" id="tap-2">
+         <input type="radio" name="select" id="tap-3">
+         <input type="checkbox" id="imgTap">
+         <div class="sliders">
+            <label for="tap-1" class="tap tap-1"></label>
+            <label for="tap-2" class="tap tap-2"></label>
+            <label for="tap-3" class="tap tap-3"></label>
+         </div>
+         <div class="inner-part">
+            <label for="imgTap" class="img">
+            <img class="img-1" src="Images/white-side-bus.jpg">
+            </label>
+            <div class="content content-1">
+            
+               <div class="title">
+                  Lorem Ipsum Dolor
+               </div>
+               <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo animi atque aliquid pariatur voluptatem numquam, quisquam. Neque est voluptates doloribus!
+               </div>
+               <button>Read more</button>
+            </div>
+         </div>
+         <div class="inner-part">
+            <label for="imgTap" class="img">
+            <img class="img-2" src="Images/inside-bus.jpg">
+            </label>
+            <div class="content content-2">
+               
+               <div class="title">
+                  Lorem Ipsum Dolor
+               </div>
+               <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eos ut consectetur numquam ullam fuga animi laudantium nobis rem molestias.
+               </div>
+               <button>Read more</button>
+            </div>
+         </div>
+         <div class="inner-part">
+            <label for="imgTap" class="img">
+            <img class="img-3" src="Images/profile-1.jpg">
+            </label>
+            <div class="content content-3">
+               
+               <div class="title">
+                  Lorem Ipsum Dolor
+               </div>
+               <div class="text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod excepturi nemo commodi sint eum ipsam odit atque aliquam officia impedit.
+               </div>
+               <button>Read more</button>
+            </div>
+         </div>
+      </div>
+
+</section>
+
+
+
+  <!-- The grid: two columns -->
+  <section id="services">
+<div class="rows">
+   <div class="column" onclick="openTab('b1');" style="background: #8e9eab;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+   ;">Our Profile
+      <div>
+      <button class="click">Read More</button>
+     </div>
+   </div>
+   <div class="column" onclick="openTab('b2');" style="background: #616161;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+   ;">Our Speciality
+      <div>
+         <button class="click">Read More</button>
+      </div>
+   </div>
+</div>
+ 
+ <!-- The expanding grid (hidden by default) -->
+ <div id="b1" class="containerTab" style="display:none;background-color: #8BC6EC;
+ background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);">
+   <!-- If you want the ability to close the container, add a close button -->
+   <span onclick="this.parentElement.style.display='none'" class="closebtn"><img src="images/close.png"></span>
+   <h2>Our Profile</h2>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, quo tempore! Hic inventore ipsa accusamus minus, ducimus maxime modi maiores aliquid quibusdam molestias perspiciatis dolores corrupti, dicta facere explicabo sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium eaque architecto, ab ut deleniti quos necessitatibus amet officia nam vitae ducimus quam nisi! Sequi placeat veniam aliquid quasi esse cumque.</p>
+ </div>
+ 
+ <div id="b2" class="containerTab" style="display:none;background-color: #8EC5FC;
+ background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+ ">
+   <span onclick="this.parentElement.style.display='none'" class="closebtn"><img src="images/close.png"></span>
+   <h2>Our Speciality</h2>
+   <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro fuga nobis autem facilis consequuntur repudiandae hic alias id officiis, impedit aperiam placeat cum tempore quam eum nemo ab quis numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores suscipit sit delectus quasi laudantium in vero facere recusandae nesciunt! Dicta vitae totam quibusdam cumque quas provident cum non dolore repudiandae?</p>
+ </div>
+ </section>
+ 
+
+ <!--gallery Section-->
+ <section>
+  <div class="gallery">
+       <div class="head-gallery"><h2>Photo Gallery</h2></div>
+     <a href="images/Modal-1.jpg" data-lightbox="mygallery" data-title="Traveller"><img src="images/Modal-1.jpg"></a>
+     <a href="images/Modal-2.jpg" data-lightbox="mygallery" data-title="Bus"><img src="images/Modal-2.jpg"></a>
+     <a href="images/handle.jpg" data-lightbox="mygallery" data-title="Driver Seat"><img src="images/handle.jpg"></a>
+     <a href="images/modal-6.jpg" data-lightbox="mygallery" data-title="Coach"><img src="images/Modal-6.jpg"></a>
+     <a href="images/Modal-5.jpg" data-lightbox="mygallery" data-title="Inside bus"><img src="images/Modal-5.jpg"></a>
+     <a href="images/toy bus.jpg" data-lightbox="mygallery" data-title="Animated Bus"><img src="images/toy bus.jpg"></a>
+      
+  </div>
+
+ </section>
+
+ <!--Testimonials-->
+
+<section id="testimonials">
+    <div class="testimonial-heading">
+       <span>Reviews</span>
+       <h1>Testimonials</h1>
+    </div>
+
+    <div class="testimonial-box-container">
+
+      <!--Box-1-->
+      <div class="testimonial-box">
+         <div class="box-top">
+            <div class="profile">
+               <!--image-->
+                <div class="profile-img">
+                   <img src="Images/lady-img.jpg" alt="">
+                </div>
+               <!--name and username--> 
+                 <div class="name-user">
+                    <strong>Lorem Ipsum</strong>
+                    <span>Lorem ipsum</span>
+                 </div> 
+            </div>
+            <div class="reviews">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            </div>
+         </div>
+      
+
+      <div class="client-comment">
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dolore non placeat itaque temporibus voluptas rerum nostrum! Quibusdam sequi, veniam reprehenderit deleniti praesentium id inventore iusto, ullam amet voluptas repellat.</p>
+      </div>
+    </div>
+
+    <div class="testimonial-box">
+      <div class="box-top">
+         <div class="profile">
+            <!--image-->
+             <div class="profile-img">
+                <img src="Images/post-4.png" alt="">
+             </div>
+            <!--name and username--> 
+              <div class="name-user">
+                 <strong>Lorem Ipsum</strong>
+                 <span>Lorem ipsum</span>
+              </div> 
+         </div>
+         <div class="reviews">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="far fa-star"></i>
+         </div>
+      </div>
+   
+
+   <div class="client-comment">
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dolore non placeat itaque temporibus voluptas rerum nostrum! Quibusdam sequi, veniam reprehenderit deleniti praesentium id inventore iusto, ullam amet voluptas repellat.</p>
+   </div>
+ </div>
+
+ <div class="testimonial-box">
+   <div class="box-top">
+      <div class="profile">
+         <!--image-->
+          <div class="profile-img">
+             <img src="Images/lady-img.jpg" alt="">
+          </div>
+         <!--name and username--> 
+           <div class="name-user">
+              <strong>Lorem Ipsum</strong>
+              <span>Lorem ipsum</span>
+           </div> 
+      </div>
+      <div class="reviews">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="far fa-star"></i>
+      </div>
+   </div>
+
+
+<div class="client-comment">
+   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dolore non placeat itaque temporibus voluptas rerum nostrum! Quibusdam sequi, veniam reprehenderit deleniti praesentium id inventore iusto, ullam amet voluptas repellat.</p>
+</div>
+</div>
+
+<div class="testimonial-box">
+   <div class="box-top">
+      <div class="profile">
+         <!--image-->
+          <div class="profile-img">
+             <img src="Images/post-4.png" alt="">
+          </div>
+         <!--name and username--> 
+           <div class="name-user">
+              <strong>Lorem Ipsum</strong>
+              <span>Lorem ipsum</span>
+           </div> 
+      </div>
+      <div class="reviews">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="far fa-star"></i>
+      </div>
+   </div>
+
+
+   <div class="client-comment">
+     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, dolore non placeat itaque temporibus voluptas rerum nostrum! Quibusdam sequi, veniam reprehenderit deleniti praesentium id inventore iusto, ullam amet voluptas repellat.</p>
+   </div>
+ </div>
+</div>
+
+
+</section>
+
+
+
+
+<!--Contact Section-->
+     <section id="contact-section">
+<div class="contact-bg">
+<h3>Get in Touch With Us</h3>
+<h2>Contact Us</h2>
+<div class="line">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo modi illo, error quisquam rerum laudantium similique rem ad reprehenderit amet.</p>
+</div>
+
+<div class="contact-body">
+    <div class="contact-info">
+        <div>
+            <span><i class="fas fa-phone-alt"></i></span>
+            <span>Phone No.</span>
+            <span class="text">9604003030</span>  
+        </div>
+
+        <div>
+            <span><i class="fas fa-envelope"></i></span>
+            <span>E-mail</span>
+            <span class="text">synergytechnocrafts@gmail.com </span>    
+        </div>
+
+        <div>
+            <span><i class="fab fa-twitter"></i></span>
+            <span>Twitter</span>
+            <span class="text">Synergy Technocrafts </span>    
+        </div>
+
+        <div>
+            <span><i class="fas fa-map-marker-alt"></i></span>
+            <span>Address</span>
+            <span class="text">Flat No 3, Crystal Homes Next To Income Tax Bhavan, Sector26, Pradhikaran, Pune 411044.</span>   
+        </div>
+
+    </div>
+</div>
+<div class="Map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.3680224260843!2d73.7707897142061!3d18.647474270149175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2b9c2ec809c73%3A0x7099adfff9ebacf5!2sSynergy%20Technocrafts!5e0!3m2!1sen!2sin!4v1643265719814!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+<div class="contact-footer">
+    <h3>Follow Us</h3>
+    <div class="social-links">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+</div>
+</section>
+
+</div>
+
+
+<script>
+   function openTab(tabName) {
+  var i, x;
+  x = document.getElementsByClassName("containerTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  document.getElementById(tabName).style.display = "block";
+}
+
+</script>
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
